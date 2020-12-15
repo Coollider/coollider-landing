@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: black url("images/space.png") no-repeat fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header__logo {
+    width: 150px;
+}
+
+.header__title {
+    font-size: 5rem;
+    margin-right: 50px;
+}
+
+.header__small-text {
+    font-size: 1.2rem;
+}
+
+.clouds {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: url("images/clouds.png");
+    z-index: -1;
+    animation: clouds-move 200s linear infinite;
+}
+
+@keyframes clouds-move {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+
+@media (max-width: 800px) {
+    .header__title {
+        font-size: 3rem;
+    }
+    .header__small-text {
+        font-size: 1rem;
+    }
+    .header__logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__title {
+        font-size: 2rem;
+    }
+    .header__small-text {
+        font-size: 0.8rem;
+    }
+    .header__logo {
+        width: 70px;
+    }
+}
