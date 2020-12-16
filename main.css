@@ -80,7 +80,7 @@
         font-size: 0.8rem;
     }
     .header__logo {
-        width: 100px;
+        width: 120px;
     }
 }
 
@@ -89,12 +89,13 @@
         cursor: default;
     }
     .header__title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .header__small-text {
         font-size: 0.65rem;
     }
-    .header__logo {
-        width: 70px;
+    .header-button {
+        font-size: 1rem;
+        padding: 10px 20px;
     }
 }
