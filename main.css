@@ -6,7 +6,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background: black url("images/space.png") fixed;
+    background: black url("images/space-min.png") fixed;
     background-size: cover;
     color: #fff;
     animation: stars-move 600s linear infinite;
