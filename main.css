@@ -29,6 +29,31 @@
     font-size: 1.2rem;
 }
 
+.header-button__outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.header-button {
+    display: block;
+    cursor: pointer;
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    border-radius: 40px;
+    outline: none;
+    transition-duration: 0.5s;
+}
+
+.header-button:hover {
+    background: #fff;
+    color: #000;
+}
+
 @keyframes header-move {
     from {
         left: -100%;
@@ -60,6 +85,9 @@
 }
 
 @media (max-width: 500px) {
+    .header-button {
+        cursor: default;
+    }
     .header__title {
         font-size: 2rem;
     }
