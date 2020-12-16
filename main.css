@@ -1,22 +1,4 @@
-* {
-    box-sizing: border-box;
-}
 
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    background: black url("images/space-min.png") fixed;
-    background-size: cover;
-    color: #fff;
-    animation: stars-move 600s linear infinite;
-}
-
-h1, h2, h3,
-h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-}
 
 .header {
     display: flex;
@@ -37,27 +19,6 @@ h4, h5, h6 {
 
 .header__small-text {
     font-size: 1.2rem;
-}
-
-.clouds {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background: url("images/clouds.png");
-    z-index: -1;
-    animation: clouds-move 200s linear infinite;
-}
-
-@keyframes clouds-move {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
-}
-
-@keyframes stars-move {
-    from {background-position:0 0;}
-    to {background-position:-10000px 0;}
 }
 
 @media (max-width: 800px) {
