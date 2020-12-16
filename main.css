@@ -6,9 +6,10 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background: black url("images/space.png") no-repeat fixed;
+    background: black url("images/space.png") fixed;
     background-size: cover;
     color: #fff;
+    animation: stars-move 600s linear infinite;
 }
 
 h1, h2, h3,
@@ -52,6 +53,11 @@ h4, h5, h6 {
 @keyframes clouds-move {
     from {background-position:0 0;}
     to {background-position:10000px 0;}
+}
+
+@keyframes stars-move {
+    from {background-position:0 0;}
+    to {background-position:-10000px 0;}
 }
 
 @media (max-width: 800px) {
