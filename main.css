@@ -1,4 +1,46 @@
 
+.go-from-left {
+    opacity: 0;
+    transform: translateX(-10%);
+}
+
+.animate .go-from-left {
+    position: relative;
+    animation: go-from-left 1s forwards;
+}
+
+.go-from-right {
+    opacity: 0;
+    transform: translateX(10%);
+}
+
+.animate .go-from-right {
+    position: relative;
+    animation: go-from-right 1s forwards;
+}
+
+@keyframes go-from-left {
+    from {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes go-from-right {
+    from {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -10,6 +52,7 @@
 
 .block {
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .header__inner {

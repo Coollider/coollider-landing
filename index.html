@@ -10,8 +10,6 @@
         С помощью Куллайдера ты можешь отправиться в увлекательное путешествие и получить те знания, которые тебе нужны.
         Не теряй времени и начни путешествие прямо сейчас!
     ">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -30,6 +28,7 @@
             background-size: cover;
             color: #fff;
             animation: stars-move 600s linear infinite;
+            overflow-x: hidden;
         }
 
         h1, h2, h3,
@@ -88,6 +87,47 @@
             to {background-position:-10000px 0;}
         }
     </style>
+    <style>
+        @font-face {
+            font-family: 'Open Sans';
+            font-weight: 300;
+            src:
+                    url(fonts/opensans-light-webfont.woff),
+                    url(fonts/opensans-light-webfont.woff2);
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            src:
+                    url(fonts/opensans-regular-webfont.woff),
+                    url(fonts/opensans-regular-webfont.woff2);
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            font-weight: 600;
+            src:
+                    url(fonts/opensans-semibold-webfont.woff),
+                    url(fonts/opensans-semibold-webfont.woff2);
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            font-weight: 700;
+            src:
+                    url(fonts/opensans-bold-webfont.woff),
+                    url(fonts/opensans-bold-webfont.woff2);
+        }
+
+        @font-face {
+            font-family: 'Open Sans';
+            font-weight: 800;
+            src:
+                    url(fonts/opensans-extrabold-webfont.woff),
+                    url(fonts/opensans-extrabold-webfont.woff2);
+        }
+    </style>
     <link rel="stylesheet" href="./main.css">
     <link rel="icon" type="image/png" href="images/coollider-min.png">
     <title>Добро пожаловать в Coollider!</title>
@@ -105,16 +145,16 @@
         <img class="header__logo" src="images/coollider-min.png" alt="rocket">
     </header>
     <main>
-        <section class="learn-by-play block">
+        <section id="learn-by-play" class="learn-by-play block">
             <h2 class="learn-by-play__header">Учись, играя!</h2>
             <div class="learn-by-play__inner">
-                <div class="learn-by-play__text">
+                <div class="learn-by-play__text go-from-left">
                     Не нравятся скучные уроки? Мы превратим твой урок в игру!
                     Решай головоломки, смотри интересные видеоролики.
                     Участвуй в конкурсах, где у тебя есть шанс выиграть
                     крутые призы и подписки на разные сервисы!
                 </div>
-                <div class="learn-by-play__image-outer">
+                <div class="learn-by-play__image-outer go-from-right">
                     <img class="learn-by-play__image" src="images/games.svg" alt="games">
                 </div>
             </div>
@@ -123,20 +163,30 @@
 <!--    <footer>-->
 <!--        <div>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
 <!--    </footer>-->
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(70578877, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-        });
+    <script>
+        var learnByPlay = document.getElementById('learn-by-play'),
+            distanceForAnimation = window.innerHeight / 100 * 70;
+        window.onscroll = function() {
+            if (learnByPlay.offsetTop - distanceForAnimation < window.scrollY &&
+                learnByPlay.className.indexOf('animate') === -1) {
+                learnByPlay.className += ' animate';
+            }
+        }
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/70578877" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter -->
+<!--    <script type="text/javascript" >-->
+<!--        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};-->
+<!--            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})-->
+<!--        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");-->
+
+<!--        ym(70578877, "init", {-->
+<!--            clickmap:true,-->
+<!--            trackLinks:true,-->
+<!--            accurateTrackBounce:true,-->
+<!--            webvisor:true-->
+<!--        });-->
+<!--    </script>-->
+<!--    <noscript><div><img src="https://mc.yandex.ru/watch/70578877" style="position:absolute; left:-9999px;" alt="" /></div></noscript>-->
+<!--    &lt;!&ndash; /Yandex.Metrika counter &ndash;&gt;-->
 </body>
 </html>
