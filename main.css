@@ -1,4 +1,6 @@
-
+body {
+    height: 300vh;
+}
 
 .header {
     display: flex;
@@ -52,6 +54,45 @@
 .header-button:hover {
     background: #fff;
     color: #000;
+}
+
+.learn-by-play {
+    min-height: 100vh;
+    text-align: center;
+    background-color: #66A1D9D9;
+    display: flex;
+    flex-direction: column;
+}
+
+.learn-by-play__header {
+    padding: 20px 0;
+}
+
+.learn-by-play__inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 50px;
+    flex-grow: 1;
+}
+
+.learn-by-play__text {
+    padding-top: 150px;
+    width: 100%;
+    flex-grow: 1;
+    margin-right: 50px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.learn-by-play__image-outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn-by-play__image {
+    width: 300px;
 }
 
 @keyframes header-move {

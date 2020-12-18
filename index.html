@@ -11,16 +11,21 @@
         Не теряй времени и начни путешествие прямо сейчас!
     ">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
         }
 
+        img {
+            width: 100%;
+        }
+
         body {
             margin: 0;
-            font-family: 'Roboto', sans-serif;
             font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
             background: black url("images/space-min.png") fixed;
             background-size: cover;
             color: #fff;
@@ -31,6 +36,35 @@
         h4, h5, h6 {
             margin: 0;
             padding: 0;
+        }
+
+        h2, h3 {
+            font-weight: 700;
+        }
+
+        h4, h5 {
+            font-weight: 600;
+        }
+
+        h1 {
+            font-weight: 800;
+            font-size: 4rem;
+        }
+
+        h2 {
+            font-size: 3.625rem;
+        }
+
+        h3 {
+            font-size: 3.125rem;
+        }
+
+        h4 {
+            font-size: 2.625rem
+        }
+
+        h5 {
+            font-size: 2.25rem
         }
 
         .clouds {
@@ -70,6 +104,26 @@
         </div>
         <img class="header__logo" src="images/coollider-min.png" alt="rocket">
     </header>
+    <main>
+        <section class="learn-by-play">
+            <h2 class="learn-by-play__header">Учись, играя!</h2>
+            <div class="learn-by-play__inner">
+                <div class="learn-by-play__text">
+                    Не нравятся скучные уроки? Мы превратим твой урок в игру!
+                    <br />
+                    Решай головоломки, смотри интересные видеоролики,
+                    <br />
+                    Участвуй в конкурсах, где у тебя есть шанс выиграть
+                    <br />
+                    крутые призы и подписки на разные сервисы!
+                    <br />
+                </div>
+                <div class="learn-by-play__image-outer">
+                    <img class="learn-by-play__image" src="images/games.svg" alt="games">
+                </div>
+            </div>
+        </section>
+    </main>
 <!--    <footer>-->
 <!--        <div>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
 <!--    </footer>-->
