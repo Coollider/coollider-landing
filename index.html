@@ -6,175 +6,83 @@
           content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#000000">
-    <meta name="description" content="
-        С помощью Куллайдера ты можешь отправиться в увлекательное путешествие и получить те знания, которые тебе нужны.
-        Не теряй времени и начни путешествие прямо сейчас!
-    ">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        img {
-            width: 100%;
-        }
-
-        body {
-            margin: 0;
-            font-size: 16px;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            background: black url("images/space-min.png") fixed;
-            background-size: cover;
-            color: #fff;
-            animation: stars-move 600s linear infinite;
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3,
-        h4, h5, h6 {
-            margin: 0;
-            padding: 0;
-        }
-
-        h2, h3 {
-            font-weight: 700;
-        }
-
-        h4, h5 {
-            font-weight: 600;
-        }
-
-        h1 {
-            font-weight: 800;
-            font-size: 4rem;
-        }
-
-        h2 {
-            font-size: 3.625rem;
-        }
-
-        h3 {
-            font-size: 3.125rem;
-        }
-
-        h4 {
-            font-size: 2.625rem
-        }
-
-        h5 {
-            font-size: 2.25rem
-        }
-
-        .clouds {
-            position: fixed;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            background: url("images/clouds.png");
-            z-index: -1;
-            animation: clouds-move 200s linear infinite;
-        }
-
-        @keyframes clouds-move {
-            from {background-position:0 0;}
-            to {background-position:10000px 0;}
-        }
-
-        @keyframes stars-move {
-            from {background-position:0 0;}
-            to {background-position:-10000px 0;}
-        }
-    </style>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="icon" type="image/png" href="./images/coollider-min.png">
+    <link rel="canonical" href="https://coollider.ru"/>
+    <title>Добро пожаловать в Куллайдер!</title>
     <style>
         @font-face {
             font-family: 'Open Sans';
             font-weight: 300;
             src:
-                    url(fonts/opensans-light-webfont.woff),
-                    url(fonts/opensans-light-webfont.woff2);
+                url(fonts/opensans-light-webfont.woff),
+                url(fonts/opensans-light-webfont.woff2);
         }
 
         @font-face {
             font-family: 'Open Sans';
             font-weight: 400;
             src:
-                    url(fonts/opensans-regular-webfont.woff),
-                    url(fonts/opensans-regular-webfont.woff2);
+                url(fonts/opensans-regular-webfont.woff),
+                url(fonts/opensans-regular-webfont.woff2);
         }
 
         @font-face {
             font-family: 'Open Sans';
             font-weight: 600;
             src:
-                    url(fonts/opensans-semibold-webfont.woff),
-                    url(fonts/opensans-semibold-webfont.woff2);
+                url(fonts/opensans-semibold-webfont.woff),
+                url(fonts/opensans-semibold-webfont.woff2);
         }
 
         @font-face {
             font-family: 'Open Sans';
             font-weight: 700;
             src:
-                    url(fonts/opensans-bold-webfont.woff),
-                    url(fonts/opensans-bold-webfont.woff2);
+                url(fonts/opensans-bold-webfont.woff),
+                url(fonts/opensans-bold-webfont.woff2);
         }
 
         @font-face {
             font-family: 'Open Sans';
             font-weight: 800;
             src:
-                    url(fonts/opensans-extrabold-webfont.woff),
-                    url(fonts/opensans-extrabold-webfont.woff2);
+                url(fonts/opensans-extrabold-webfont.woff),
+                url(fonts/opensans-extrabold-webfont.woff2);
         }
     </style>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="icon" type="image/png" href="images/coollider-min.png">
-    <link rel="canonical" href="https://coollider.ru"/>
-    <title>Добро пожаловать в Coollider!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        body {
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            background-size: cover;
+        }
+        h1 {
+            font-size: 4rem;
+        }
+    </style>
 </head>
 <body>
-    <div class="clouds"></div>
     <header class="header">
         <div class="header__inner">
-            <h1 class="header__title">Куллайдер</h1>
-            <span class="header__small-text">Начни своё путешествие прямо сейчас!</span>
-            <div class="header-button__outer">
-                <a class="header-button">Начать!</a>
+            <div class="header__text">
+                <h1 class="main-heading">Учитесь эффективнее</h1>
+                <br />
+                <span>Получайте знания в интерактивной форме <br>и делитесь опытом с другими</span>
+            </div>
+            <div class="header__image-outer">
+                <img width="400" height="400" src="./images/coollider.png" alt="coollider">
             </div>
         </div>
-        <img class="header__logo" src="images/coollider-min.png" alt="rocket">
+        <div class="header__button-outer">
+            <button class="action-button">Прокачать свои знания</button>
+        </div>
     </header>
-    <main>
-        <section id="learn-by-play" class="learn-by-play block">
-            <h2 class="learn-by-play__header">Учись, играя!</h2>
-            <div class="learn-by-play__inner">
-                <div class="learn-by-play__text go-from-left">
-                    Не нравятся скучные уроки? Мы превратим твой урок в игру!
-                    Решай головоломки, смотри интересные видеоролики.
-                    Участвуй в конкурсах, где у тебя есть шанс выиграть
-                    крутые призы и подписки на разные сервисы!
-                </div>
-                <div class="learn-by-play__image-outer go-from-right">
-                    <img class="learn-by-play__image" src="images/games.svg" alt="games">
-                </div>
-            </div>
-        </section>
-    </main>
-<!--    <footer>-->
-<!--        <div>Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
-<!--    </footer>-->
-    <script>
-        var learnByPlay = document.getElementById('learn-by-play'),
-            distanceForAnimation = window.innerHeight / 100 * 70;
-        window.onscroll = function() {
-            if (learnByPlay.offsetTop - distanceForAnimation < window.scrollY &&
-                learnByPlay.className.indexOf('animate') === -1) {
-                learnByPlay.className += ' animate';
-            }
-        }
-    </script>
-    <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
             m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
@@ -188,6 +96,5 @@
         });
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/70578877" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!--    &lt;!&ndash; /Yandex.Metrika counter &ndash;&gt;-->
 </body>
 </html>
