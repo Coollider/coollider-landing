@@ -63,7 +63,7 @@
     opacity: 1;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
     .header {
         min-height: 100vh;
         display: flex;
@@ -99,7 +99,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     h1 {
         font-size: 2.3rem;
     }
@@ -116,7 +116,7 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .header {
         padding: 100px 20px;
     }
