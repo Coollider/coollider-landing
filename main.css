@@ -75,16 +75,15 @@
     display: flex;
     align-items: center;
     height: 100%;
-    position: relative;
-    animation: heading-move 10s linear infinite;
+    animation: heading-move 10s linear infinite alternate;
 }
 
 @keyframes heading-move {
     from {
-        left: 0;
+        transform: translate(0, 0);
     }
     to {
-        left: -100%;
+        transform: translate(-100%, 0);
     }
 }
 
@@ -101,7 +100,7 @@
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: #66A1D955;
+    background-color: #15229355;
 }
 
 .team-form {
@@ -142,7 +141,7 @@
 .text-field {
     display: block;
     width: 100%;
-    border: 1px solid gray;
+    border: 2px solid #66A1D9;
     border-radius: 4px;
     padding: .5rem 1rem;
     font-size: 1rem;
