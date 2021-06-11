@@ -57,6 +57,7 @@
     color: #000;
     opacity: 0.9;
     transition: opacity linear 0.2s;
+    text-decoration: none;
 }
 
 .action-button:hover {
