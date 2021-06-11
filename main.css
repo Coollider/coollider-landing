@@ -1,7 +1,7 @@
 .header {
     letter-spacing: 1px;
     padding: 100px 120px;
-    background: #152293;
+    background-color: #15229355;
     color: #fff;
     position: relative;
     overflow: hidden;
@@ -63,6 +63,116 @@
     opacity: 1;
 }
 
+.scrolling-block {
+    background-color: #FFC46D;
+    overflow: hidden;
+    height: 160px;
+    color: #fff;
+}
+
+.headings-outer {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    animation: heading-move 10s linear infinite;
+}
+
+@keyframes heading-move {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+.moving-heading {
+    font-size: 2.5rem;
+    margin: 0 100px 0 100px;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.form-outer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #66A1D955;
+}
+
+.team-form {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    max-width: 800px;
+    width: 100%;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.team-form__inner {
+    max-width: 500px;
+    width: 100%;
+}
+
+.pre-registration-title {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-row {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.input-text {
+    display: block;
+}
+
+.text-field {
+    display: block;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+
+.ticket-button-outer {
+    display: flex;
+    justify-content: center;
+}
+
+.ticket-button {
+    display: block;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 21px;
+    cursor: pointer;
+    background-color: #FFC46D;
+    box-shadow: 0 0 6px #FFC46D;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.ticket-button:active {
+    transform: scale(0.9);
+}
+
+.ticket-button:disabled {
+    background-color: gray;
+}
+
+
 @media (max-width: 1439px) {
     .header {
         min-height: 100vh;
@@ -102,6 +212,9 @@
 @media (max-width: 767px) {
     h1 {
         font-size: 2.3rem;
+    }
+    .moving-heading {
+        font-size: 2rem;
     }
     .header__mars {
         left: -250px;
