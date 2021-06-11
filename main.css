@@ -213,7 +213,10 @@
     h1 {
         font-size: 2.3rem;
     }
-    .moving-heading {
+    .form-outer {
+        padding: 20px 10px;
+    }
+    .pre-registration-title, .moving-heading {
         font-size: 2rem;
     }
     .header__mars {
@@ -232,6 +235,12 @@
 @media (max-width: 575px) {
     .header {
         padding: 100px 20px;
+    }
+    .pre-registration-title, .moving-heading {
+        font-size: 1.5rem;
+    }
+    .action-button {
+        font-size: 0.9rem;
     }
 }
 
